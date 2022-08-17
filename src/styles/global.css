@@ -70,4 +70,42 @@ h2 {
 	}
 }
 
+ul {
+	display: block;
+	margin: theme('spacing.1') 0;
+	list-style-type: theme('listStyleType.disc');
+}
+
+ol,
+ul {
+	padding-left: theme('spacing.6');
+	margin: theme('spacing.4') 0;
+}
+
+ul li {
+	margin: theme('spacing.2') 0;
+}
+
+li > ul {
+	margin-top: theme('spacing.4') !important;
+}
+
+a {
+	color: theme('colors.brown');
+	font-weight: theme('fontWeight.semibold');
+	text-decoration: underline;
+	text-decoration-offset: theme('textUnderlineOffset.2');
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	transition-duration: 75ms;
+}
+
+a:hover {
+	color: theme('colors.brown-dark');
+	text-decoration: none;
+}
+
+a:focus {
+	outline-color: theme('colors.black');
+}
 @tailwind utilities;

@@ -15,11 +15,13 @@ import '../styles/global.css'
 		<link rel="stylesheet" id="serif-font-css"  href={import.meta.env.SENTINEL_URL} type="text/css" media="all" />
 	</head>
 	<body>
-		<header class="bg-green antialiased px-8 py-8">
-			<img src="/images/m_primary.svg" class="h-12 xl:h-16 mx-auto" alt="Marshall University logo">
+		<header class="bg-green antialiased">
+			<div class="mx-auto max-w-3xl px-6 lg:px-0 py-12">
+				<img src="/images/m_primary.svg" class="h-12 xl:h-16 mx-auto" alt="Marshall University logo">
+			</div>
 		</header>
 
-		<main class="mx-auto max-w-3xl px-8 lg:px-0 py-12">
+		<main class="mx-auto max-w-3xl px-6 lg:px-0 py-12">
 			<div class="text-gray-600 mx-auto">
 				<p>Marshall is experiencing network issues, so many website functions are not working as normal.</p>
 				<p>As we work to restore all systems, please refer to the following resources.</p>
@@ -29,10 +31,10 @@ import '../styles/global.css'
 			<div class="flex flex-wrap space-y-4 lg:space-y-0 justify-center lg:justify-between my-8 border-t border-b border-gray-200 py-8">
 				<a class="w-full lg:w-auto btn btn-green" href="https://marshall-bb.blackboard.com/webapps/bb-auth-provider-cas-bb_bb60/execute/casLogin?cmd=login&authProviderId=_124_1&redirectUrl=https%3A%2F%2Fmarshall-bb.blackboard.com%2Fultra%2F/">Blackboard</a>
 				<a class="w-full lg:w-auto btn btn-green" href="http://mymu.marshall.edu/">MyMU</a>
-				<a class="w-full lg:w-auto btn btn-green" href="http://mymu.marshall.edu/">Online Application</a>
+				<a class="w-full lg:w-auto btn btn-green" href="https://apply-new.marshall.edu/apply/">Online Application</a>
 			</div>
 
-			<div>
+			<div class="text-gray-600">
 				<h2>Contact Information</h2>
 				<ul>
 					<li><strong>Marshall University Police Department (MUPD): </strong> 304-696-HELP</li>
@@ -53,9 +55,9 @@ import '../styles/global.css'
 			</div>
 		</main>
 		<footer class="bg-gray-900 antialiased">
-			<div class="px-8 py-8 flex flex-wrap justify-between">
-				<div class="w-full lg:w-1/2 text-white text-sm font-normal text-center lg:text-left">&copy; 2022 Marshall University. An Equal Opportunity University.</div>
-				<div class="w-full lg:w-1/2 flex justify-center lg:justify-end space-x-4 lg:space-x-8 mt-8 lg:mt-0">
+			<div class="mx-auto max-w-3xl px-6 lg:px-0 py-12 space-y-8">
+				<div class="w-full text-white text-sm font-normal text-center">&copy; 2022 Marshall University. An Equal Opportunity University.</div>
+				<div class="w-full flex justify-center space-x-4 lg:space-x-8 mt-8 lg:mt-0">
 					<a href="http://www.instagram.com/marshallu" class="transition-all motion-reduce:transition-none duration-100 hover:-mt-1 border-b border-transparent hover:border-white">
 						<span class="sr-only">Marshall on Instagram</span>
 						<svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-8 w-8 fill-white">
